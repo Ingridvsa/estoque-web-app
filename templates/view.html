@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head><title>Visualizar Estoque</title></head>
+<body>
+    <div>
+        <h2>Resumo do Estoque</h2>
+        <p>Total de Produtos: {{ products|length }}</p>
+        <p>Total de Itens: {{ total_items }}</p>
+        <p>Valor Total em Estoque: R$ {{ "%.2f"|format(total_value) }}</p>
+    </div>
+
+    <div>
+        <h2>Produtos</h2>
+        <ul>
+            {% for name, prod in products.items() %}
+                <li>{{ prod.name.title() }} - {{ prod.quantity }} un - Total: R$ {{ "%.2f"|format(prod.total_value_in_stock()) }}</li>
+            {% else %}
+                <li>Nenhum produto cadastrado.</li>
+            {% endfor %}
+        </ul>
+    </div>
+    <a href="{{ url_for('home') }}">Voltar</a>
+</body>
+</html>
