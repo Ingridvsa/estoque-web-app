@@ -2,7 +2,7 @@ from flask import Flask, render_template, request, redirect, url_for
 from entities.product import Product
 
 app = Flask(__name__)
-products = {}  # Dicionário para armazenar múltiplos produtos
+products = {}  
 
 @app.route('/')
 def home():
