@@ -1,0 +1,46 @@
+/* home.css */
+
+/* Estilo básico para a página de home */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    background-color: #005f73;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    margin: 0;
+    font-size: 2em;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 20px auto;
+    width: 300px;
+}
+
+li {
+    margin: 10px 0;
+    text-align: center;
+}
+
+a {
+    display: block;
+    background-color: #0a9396;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+a:hover {
+    background-color: #94d2bd;
+    color: #000;
+}

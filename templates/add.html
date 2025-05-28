@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head><title>Adicionar Estoque</title></head>
+<link rel="stylesheet" href="{{ url_for('static', filename='css/style_add.css') }}">
 <body>
     <h2>Adicionar ao Estoque</h2>
     {% if message %}<p style="color:red;">{{ message|safe }}</p>{% endif %}
